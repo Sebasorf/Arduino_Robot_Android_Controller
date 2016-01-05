@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Controlador de Robot Arduino</string>
+    <string name="title_activity_main_activity2">Comandos de voz</string>
+    <string name="title_activity_main_activity3">Control por botones</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Escriba la dirección ip del robot:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:enabled="true"
+        android:singleLine="false"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escriba el puerto (Default:8888):"
+        android:id="@+id/tv2"
+        android:layout_below="@+id/et1"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et1"
+        android:layout_below="@+id/tv1"
+        android:layout_alignRight="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="76dp"
+        android:digits="01234567890."
+        android:inputType="phone"
+        android:maxLength="15"
+        android:maxLines="1" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:layout_below="@+id/tv2"
+        android:layout_alignRight="@+id/tv2"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="76dp"
+        android:inputType="number"
+        android:digits="01234567890"
+        android:editable="true"
+        android:maxLength="5"
+        android:maxLines="1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:text="Cancelar"
+        android:layout_alignBottom="@+id/et2"
+        android:layout_alignLeft="@+id/btn2"
+        android:layout_alignStart="@+id/btn2"
+        android:layout_alignRight="@+id/btn2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:id="@+id/btn2"
+        android:layout_marginEnd="74dp"
+        android:layout_alignTop="@+id/tv1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="74dp" />
+
+</RelativeLayout>

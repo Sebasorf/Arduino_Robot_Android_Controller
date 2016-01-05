@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.personal.controladorderobotarduino.GUIMovimiento"
+    android:id="@+id/activity3">
+
+    <TextView android:text="Presione un botón para mover el robot" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Velocidad: "
+        android:id="@+id/tv4"
+        android:layout_below="@+id/tv3"
+        android:layout_toLeftOf="@+id/ibtn4"
+        android:layout_marginTop="25dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv5"
+        android:text="0"
+        android:layout_alignTop="@+id/tv4"
+        android:layout_toRightOf="@+id/tv4"
+        android:layout_toEndOf="@+id/tv4"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Acelerar"
+        android:id="@+id/tv6"
+        android:layout_below="@+id/ibtn6"
+        android:layout_alignLeft="@+id/ibtn6"
+        android:maxLines="1"
+        android:layout_marginRight="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Parar"
+        android:id="@+id/tv7"
+        android:layout_below="@+id/ibtn5"
+        android:layout_alignRight="@+id/ibtn5"
+        android:layout_alignLeft="@+id/ibtn5"
+        android:layout_marginLeft="8dp"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Marcha atrás"
+        android:id="@+id/tv8"
+        android:layout_below="@+id/ibtn7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart="@+id/ibtn7"
+        android:layout_marginLeft="3dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn1"
+        android:background="@mipmap/ic_up_arrow"
+        android:layout_below="@+id/tv3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn2"
+        android:background="@mipmap/ic_down_arrow"
+        android:layout_below="@+id/ibtn3"
+        android:layout_toRightOf="@+id/ibtn3"
+        android:layout_toEndOf="@+id/ibtn3" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn3"
+        android:background="@mipmap/ic_left_arrow"
+        android:layout_below="@+id/ibtn1"
+        android:layout_toLeftOf="@+id/ibtn1"
+        android:layout_toStartOf="@+id/ibtn1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn4"
+        android:background="@mipmap/ic_right_arrow"
+        android:layout_alignTop="@+id/ibtn3"
+        android:layout_toRightOf="@+id/ibtn1"
+        android:layout_toEndOf="@+id/ibtn1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn5"
+        android:background="@mipmap/ic_red_circle"
+        android:layout_below="@+id/ibtn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn6"
+        android:background="@mipmap/ic_green_circle"
+        android:layout_alignTop="@+id/ibtn5"
+        android:layout_alignRight="@+id/tv3"
+        android:layout_alignEnd="@+id/tv3" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn7"
+        android:background="@mipmap/ic_orange_circle"
+        android:layout_alignTop="@+id/ibtn5"
+        android:layout_alignLeft="@+id/tv3"
+        android:layout_alignStart="@+id/tv3" />
+
+</RelativeLayout>

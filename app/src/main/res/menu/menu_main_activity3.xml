@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.personal.controladorderobotarduino.GUIMovimiento">
+    <item android:id="@+id/action_menuPrincipal" android:title="Menú principal"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:enabled="true"/>
+    <item android:id="@+id/action_ejecutarVoz" android:title="Ejecutar comando de voz"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:enabled="true"/>
+    <item android:id="@+id/action_vistaBotones" android:title="Comandos por botones"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:enabled="false" />
+    <item android:id="@+id/action_vistaComandosVoz" android:title="Ver comandos de voz"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:enabled="true" />
+    <item android:id="@+id/action_salir" android:title="Salir"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:enabled="true"/>
+</menu>
