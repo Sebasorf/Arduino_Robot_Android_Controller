@@ -1,0 +1,33 @@
+//Android studio
+Para el tema de volver las ruedas a la normalidad, podría hacer
+Mientras no se esté pulsando ninguna tecla, mando una 'Z' para saber que estoy conectado.
+¿Cuál sería el problema sino? 
+Que si yo mando una letra para doblar, ¿en dónde le digo que ponga las ruedas a la misma velocidad
+de vuelta? el problema viene que si lo digo al final de la funcion, el auto se vuelve loco y tiene
+que cambiar la velocidad constantemente. En el while(read) debe quedar colgado esperando una letra
+
+//Arduino
+En el while(1)
+Si recibo algo distinto a doblarIZquierda y doblarDerecha o recibo 'Z',
+	entonces ruedaIzquierda y ruedaDerecha tienen la misma velocidad
+
+//Arduino, doblarIzquierda o doblarDerecha
+Si el auto está andando para adelante (sirve para atrás también)
+	si se quiere girar a la derecha
+		si (velocidad*1,25) es menor a 255
+			ruedaIzquierda es igual a velocidad*1,25
+		si (velocidad*1,25) es mayor a 255 //no se puede
+			guardo la velocidad actual
+			ruedaIzquierda es igual a 255
+			ruedaDerecha es igual a 255*0,75 //y luego de esto deberia mandar Z, le digo que 							   vuelvan las ruedas a la velocidad original.
+	si se quiere girar a la izquierda
+		si (velocidad*1,25) es menor a 255
+			ruedaDerecha es igual a velocidad*1,25
+		si (velocidad*1,25) es mayor a 255 //no se puede
+			guardo la velocidad actual
+			ruedaDerecha es igual a 255
+			ruedaIzquierda es igual a 255*0,75 //y luego de esto deberia mandar Z, le digo que 							   vuelvan las ruedas a la velocidad original.
+
+
+
+	
